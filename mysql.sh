@@ -28,6 +28,7 @@ sudo systemctl restart mariadb
 
 
 #starting the firewall and allowing the mariadb to access from port no. 3306
+sudo yum install firewalld -y
 sudo systemctl start firewalld
 sudo systemctl enable firewalld
 sudo firewall-cmd --get-active-zones
